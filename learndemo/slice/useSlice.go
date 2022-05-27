@@ -9,10 +9,10 @@ slice切片关键字：
 **/
 func main() {
 	//testArr() //测试固定长度数组
-	//testArr2() //测试动态数组slice切片
+	testArr2() //测试动态数组slice切片
 
 	//userSlice()
-	sliceContent() //测试切片操作
+	//sliceContent() //测试切片操作
 }
 
 /**
@@ -77,8 +77,8 @@ func userSlice() {
 使用slice时是引用传递，修改的值会影响原始数组
 **/
 func printSlice(arr []int) {
-	for _, value := range arr {
-		fmt.Println("value:", value)
+	for _, v := range arr {
+		fmt.Println("v:", v)
 	}
 	arr[1] = 100
 }

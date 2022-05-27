@@ -6,7 +6,7 @@ import "fmt"
  结构体使用
 	1、定义
 	2、赋值
-	3、参数
+	3、参数(副本)
 **/
 func main() {
 	userType()

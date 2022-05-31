@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+/**
+变量结构pair <type: ,value: >
+type分为：
+	1、static type（int，string等）
+	2、concrete type
+**/
 type Write interface {
 	WriteBook()
 }

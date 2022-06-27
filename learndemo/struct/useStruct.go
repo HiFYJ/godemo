@@ -9,7 +9,24 @@ import "fmt"
 	3、参数(副本)
 **/
 func main() {
-	userType()
+	//userType()
+	var temp = Book{
+		title: "1111",
+		auth:  "2222",
+	}
+	fmt.Printf("值：%v  ----类型：%T\n", temp, temp)
+
+	temp2 := Book{
+		title: "123",
+		auth:  "231",
+	}
+	fmt.Printf("值：%v  ----类型：%T\n", temp2, temp2)
+
+	temp3 := &Book{
+		title: "1234",
+		auth:  "23123",
+	}
+	fmt.Printf("值：%v  ----类型：%T\n", temp3, temp3)
 }
 
 func userType() {

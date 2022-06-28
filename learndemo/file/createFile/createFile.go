@@ -10,7 +10,8 @@ import (
 func main() {
 	//WriteFile("./test.text")
 	//BufIOWrite("./test.text")
-	IOUtileWrite("./test.text")
+	//IOUtileWrite("./test.text")
+	SaveFile("./test627.text")
 }
 
 /**
@@ -52,6 +53,17 @@ func IOUtileWrite(path string) {
 	err := ioutil.WriteFile(path, []byte("你好golang233"), 0666)
 	if err != nil {
 		fmt.Println("ioutil error")
+		return
+	}
+}
+
+/**
+	使用os.WriteFile创建并写入数据
+**/
+func SaveFile(path string) {
+	err := os.WriteFile(path, []byte("你好os"), 0666)
+	if err != nil {
+		fmt.Println("writefile error", err)
 		return
 	}
 }
